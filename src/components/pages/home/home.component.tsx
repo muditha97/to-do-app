@@ -21,7 +21,7 @@ const HomeComponent = () => {
       title: "Name",
       dataIndex: "name",
       key: "name",
-      render: (text) => <a>{text}</a>,
+      render: (text) => <div>{text}</div>,
     },
     {
       title: "Age",
@@ -58,8 +58,8 @@ const HomeComponent = () => {
       key: "action",
       render: (_, record) => (
         <Space size="middle">
-          <a>Invite {record.name}</a>
-          <a>Delete</a>
+          <div>Invite {record.name}</div>
+          <div>Delete</div>
         </Space>
       ),
     },
