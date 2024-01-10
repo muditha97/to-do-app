@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { Button, Col, Form, Input, Modal, Row, Space } from "antd";
+import React from "react";
+import { Button, Input, Modal, Space } from "antd";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useMutation } from "@apollo/client";
 import { CREATE_TASK } from "../../../graphql/mutations/createTask";
 import { GET_TASKS } from "../../../graphql/queries/getTasks";
-
-const { TextArea } = Input;
 
 interface FormSchema {
   title: string;

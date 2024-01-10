@@ -3,12 +3,11 @@ import { Flex, Typography, Layout, Button } from "antd";
 import { Space, Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { contentStyle, headerStyle } from "../../styles";
-import { useMutation, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { GET_TASKS } from "../../../graphql/queries/getTasks";
 import ModalComponent from "../../templates/view-modal/modal.component";
 import { Spin } from "antd";
 import DeleteModal from "../../templates/confirm-modal/confirm-modal.component";
-import { CREATE_TASK } from "../../../graphql/mutations/createTask";
 import CreateTaskModal from "../../templates/create-task-modal/create-task-modal.component";
 
 const { Title } = Typography;
